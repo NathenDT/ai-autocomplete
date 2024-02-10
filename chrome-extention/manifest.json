@@ -1,0 +1,14 @@
+{
+  "name": "AI Auto complete",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": ["https://docs.google.com/document/d/*"],
+      "js": ["src/index.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "src/index.html"
+  }
+}
